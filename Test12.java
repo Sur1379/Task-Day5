@@ -30,6 +30,7 @@ public class Test12 {
                 break;
             case "5":
                 System.out.println(day5);
+                break;
             case "6":
                 System.out.println(day6);
                 break;
