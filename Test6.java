@@ -10,21 +10,34 @@ public class Test6 {
         int a = scanner.nextInt();
         System.out.println("input b");
         int b = scanner.nextInt();
-        System.out.println("input v");
+        System.out.println("input c");
         int c = scanner.nextInt();
-        switch ((a > b && a > c) ? 1 : (b > a && b > c) ? 2 : (c > a && c > b) ? 3 : 4) {
-            case 1:
-                System.out.println(a);
-                break;
-            case 2:
-                System.out.println(b);
-                break;
-            case 3:
-                System.out.println(c);
-                break;
-            case 4:
-                System.out.println("error");
+//        switch ((a > b && a > c) ? 1 : (b > a && b > c) ? 2 : (c > a && c > b) ? 3 : 4) {
+//            case 1:
+//                System.out.println(a);
+//                break;
+//            case 2:
+//                System.out.println(b);
+//                break;
+//            case 3:
+//                System.out.println(c);
+//                break;
+//            case 4:
+//                System.out.println("error");
+//        }
+        int max = a;
+        if (max < b) {
+            max = b;
+            if (max < c) {
+                max = c;
+                System.out.println(max);
+            } else {
+                System.out.println(max);
+            }
+        } else if (max < c) {
+            System.out.println(c);
+        } else {
+            System.out.println(max);
         }
-
     }
 }
